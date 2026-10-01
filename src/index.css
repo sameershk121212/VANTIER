@@ -1,0 +1,22 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+@layer base {
+  body { @apply bg-ivory text-charcoal font-sans antialiased; }
+  h1,h2,h3 { @apply font-serif text-green; }
+  :focus-visible { outline: 2px solid #1B3A2D; outline-offset: 3px; }
+}
+@layer components {
+  .btn { @apply inline-flex items-center justify-center gap-2 px-6 py-3 text-sm tracking-wide border border-green transition duration-300 active:scale-[.98]; }
+  .btn-solid { @apply bg-green text-ivory hover:bg-green-dark; }
+  .btn-line { @apply text-green hover:bg-green hover:text-ivory; }
+  .wrap { @apply mx-auto max-w-7xl px-5 sm:px-8; }
+}
+@keyframes fadeUp { from { opacity: 0; transform: translateY(14px) } to { opacity: 1; transform: none } }
+@keyframes pop { 50% { transform: scale(1.5) } }
+@keyframes track { from { opacity: 0; letter-spacing: .1em } to { opacity: 1; letter-spacing: .42em } }
+@keyframes draw { to { stroke-dashoffset: 0 } }
+@keyframes spin { to { transform: rotate(360deg) } }
+.fade-up { animation: fadeUp .7s ease both } .pop { animation: pop .35s ease }
+.splash-logo { animation: track 1.6s ease forwards }
+.splash-ring { stroke-dasharray: 320; stroke-dashoffset: 320; animation: draw 1.8s ease forwards }
+.splash-hand { transform-origin: 60px 60px; animation: spin 2.4s ease-in-out }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important } }

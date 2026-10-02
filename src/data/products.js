@@ -20,8 +20,8 @@ const RAW = [
   ['16', 'Rolex Daytona Style', 'Black Dial Gold Sub-dials', 'Gold Stainless Steel Chain', 'metal', 1999, false],
   ['17', 'Patek Philippe Nautilus Style', 'Textured Black Open-Heart', 'Black Stainless Steel', 'metal', 1850, false],
   ['18', 'Rolex Datejust Style', 'Black Dial Two-Tone', 'Gold/Silver Jubilee', 'metal', 1899, false],
-  ['19', 'Omega Speedmaster', 'Black Dial', 'Black Chain', 'metal', 1900, false],
-  ['20', 'Rolex Cellini Style', 'White Textured Roman Dial', 'Brown Leather Strap', 'leather', 1800, false],
+ ['19', 'Fossil Omega Speedmaster', 'Black Dial', 'Black Chain', 'metal', 1900, false],
+['20', 'Omega Speedmaster', 'Black Dial', 'Black Chain', 'metal', 1900, false],
   ['21', 'Rolex Cellini Style', 'White Textured Roman Dial', 'Brown Leather Strap', 'leather', 1800, false],
 ];
 export const products = RAW.map(([id, name, variant, strap, strapType, price, black]) => ({
